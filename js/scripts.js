@@ -241,7 +241,7 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var location = {lat: 29.021313, lng: 77.662955};
+    var location = {lat: 29.0221624, lng: 77.6636181};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
@@ -252,6 +252,14 @@ function initMap() {
         position: location,
         map: map
     });
+
+   if ((navigator.platform.indexOf("iPhone") != -1) || 
+   (navigator.platform.indexOf("iPod") != -1) || 
+   (navigator.platform.indexOf("iPad") != -1))
+       window.open("maps://maps.google.com/maps?daddr=29.0221624,77.6636181&amp;ll=");
+
+    else /* else use Google */
+       window.open("https://maps.google.com/maps?daddr=29.0221624,77.6636181&amp;ll=");
 }
 
 function initBBSRMap() {
@@ -266,6 +274,14 @@ function initBBSRMap() {
         position: la_fiesta,
         map: map
     });
+
+    if ((navigator.platform.indexOf("iPhone") != -1) || 
+    (navigator.platform.indexOf("iPod") != -1) || 
+    (navigator.platform.indexOf("iPad") != -1))
+        window.open("maps://maps.google.com/maps?daddr=29.0221624,77.6636181&amp;ll=");
+
+else /* else use Google */
+    window.open("https://maps.google.com/maps?daddr=29.0221624,77.6636181&amp;ll=");
 }
 
 // alert_markup
