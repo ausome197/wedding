@@ -251,13 +251,13 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 750px;
+  min-height: 850px;
   background: url('../img/hero-min.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: relative;
+  position: center;
 
   /*.rsvp-btn {
     position: absolute;
@@ -278,7 +278,7 @@ Hero
     margin-bottom: 80px;
   }
   .hero-content {
-    padding-top: 40%;
+    padding-top: 10%;
   }
   .hero-content img {
     width: 55%;
@@ -539,8 +539,8 @@ Features-stack
     margin-top: 10px;
   }
   .logo-placeholder {
-    width: 230px;
-    height: 230px;
+    width: 260px;
+    height: 260px;
     position: absolute;
     bottom: -285px;
     left: 50%;
